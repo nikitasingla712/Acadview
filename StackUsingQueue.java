@@ -75,8 +75,8 @@ public class StackUsingQueues
 			s.q2.enQueue(s.q2, n);
 		}
 		temp=s.q2.front;
-		git.Queue.Node prev=null;
-		git.Queue.Node curr=temp.next;
+		Queue.Node prev=null;
+		Queue.Node curr=temp.next;
 		while(curr!=null)
 		{
 			temp.next=prev;
@@ -106,7 +106,7 @@ public class StackUsingQueues
 	
 	public static void display(StackUsingQueues s)
 	{
-		git.Queue.Node temp=s.q2.front;
+		Queue.Node temp=s.q2.front;
 		while(temp!=null)
 		{
 			System.out.print(temp.data+" ");
